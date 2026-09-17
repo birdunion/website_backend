@@ -22,20 +22,8 @@ const config: Core.Config.Middlewares = [
           },
         },
       },
-    },
-    {
-        name: 'strapi::cors',
-        config: {
-          origin: [
-            'http://localhost:5173',
-            'https://bird-union.org',
-            'https://www.bird-union.org',
-          ],
-          methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
-          headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
-          keepHeaderOnError: true,
-        },
-      },
+  },
+  'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
